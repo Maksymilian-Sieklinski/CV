@@ -1,0 +1,218 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeCompactListStart}{\begin{itemize}[leftmargin=0.3in, label={\tiny$\bullet$}, nosep, itemsep=2pt]}
+\newcommand{\resumeCompactListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeAwardItem}[2]{
+  \item
+  \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+    \small#1 \hspace{1em} & #2 \\
+  \end{tabular*}\vspace{-3pt}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Maksymilian Siekliński} \\
+\vspace{1mm}
+\small +44 0770-763-1688 $|$ +48 570-383-665 $|$
+\href{mailto:maksymilian.sieklinski.2@gmail.com}{maksymilian.sieklinski.2@gmail.com}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University College London}{Sept. 2024 -- June 2027}
+      {Bachelor of Science, Computer Science (86.3\% total avg)}{Great Britain, London}
+  \resumeSubHeadingListEnd
+  \vspace{-2mm}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {V High School in Cracow }{Sept. 2020 -- Apr. 2024}
+      {GPA 5.55, Top 1\% in Math/Physics/CS ($A^*A^*A^*$ equiv.)}{Poland, Cracow}
+  \resumeSubHeadingListEnd
+
+%-----------Projects-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\href{https://github.com/akioweh/carbon-aware-ai-agents}{Carbon optimized AI workload scheduling} \textit{(C++, Drogon)}}{Sept. 2025 - Mar. 2026}
+      {}{}
+      \vspace{-5mm}
+      \resumeItemListStart 
+        \resumeItem{Developed a C++23 web app to minimize AI carbon emissions via global datacenter scheduling.}
+        \resumeItem{Optimized workload execution using dynamic programming to select the greenest time and location.}
+        \resumeItem{Implemented a lock-free architecture to manage shared state across high-concurrency threads.}
+        \resumeItem{Vectorized performance-critical code using AVX-512 for SIMD parallelization.}
+        \resumeItem{Leveraged C++23 coroutines and engineered a custom \textit{when\_all} asynchronous primitive.}
+      \resumeItemListEnd
+
+    \vspace{2mm}
+    \resumeSubheading{\href{https://github.com/Maksymilian-Sieklinski/Java-Web-Application.git}{Verified Market Simulator Research \textit{(Python, OCaml)}}}{Jan. 2026 - Present}{Ongoing}{}
+        \resumeItemListStart
+            \resumeItem{Architecting a purely functional LOB simulator in OCaml 5.0 using immutable structures to eliminate state drift.}
+            \resumeItem{Implementing a low-latency streamer using TCP sockets and zero-copy parsing.}
+        \resumeItemListEnd
+    
+
+  \resumeSubHeadingListEnd
+
+%-----------Experience-----------
+\section{Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {IMC Trading | Software Engineering Internship}{Jun. 2026 - Sept. 2026}
+        {Execution Team}{}
+        \resumeItemListStart 
+            \resumeItem{Architected a C++ load-testing framework capable of generating 13M+ updates/sec across burst traffic profiles.}
+            \resumeItem{Benchmarked FPGA-accelerated execution gateway to establish 6M updates/sec as the maximum throughput.}
+            \resumeItem{Uncovered gateway crash vectors in session handling, client disconnects, and ID counter overflows.}
+            \resumeItem{Eliminated firm-wide tail-latency spikes by resolving unbounded hash map growth to prevent runtime rehashing.}
+            \resumeItem{Automated CI/CD performance regression suites to verify throughput and stability on code changes.}
+        \resumeItemListEnd
+    \vspace{2mm}
+    \resumeSubheading
+        {\href{https://gitcode.com/Cangjie-TPC/MagicExplorer/blob/main/README.md}{Huawei | Programming Language Research Intern\textit{ (Cangjie)}}}{Jun. 2025 - Sept. 2025}
+        {}{}
+        \vspace{-4mm}
+        \resumeItemListStart 
+            \resumeItem{Built an AI-driven, cross-platform browser automation tool utilizing computer vision for visual classification.}
+            \resumeItem{Packaged in Docker for OS- and CPU-agnostic deployment, simplifying environment setup.}
+        \resumeItemListEnd
+    \vspace{2mm}
+    \resumeSubheading
+        {Insight Programs | IMC Trading, Citadel \& Susquehanna}{2025 \& 2026}
+        {}{}
+        \vspace{-5mm}
+        \resumeItemListStart 
+            \resumeItem{1st place in Citadel's quantitative research challenge, a team-based probability competition.}
+            \resumeItem{1st place in IMC internship automated trading hackathon.}
+            \resumeItem{3rd place in IMC algorithmic optimization challenge.}
+            \resumeItem{3rd place in SIG trading challenge.}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+%empty%
+
+%---------Competitions and Awards--------
+\section{Competitions \& Awards}
+  \resumeCompactListStart
+    \resumeAwardItem{5th in Poland in group competitive programming contest.}{2023}
+    \resumeAwardItem{8th in Poland in solo competitive programming contest, Diamentowy Index AGH.}{2024}
+    \resumeAwardItem{11th in UK \& Ireland Programming Contest for University students (UKIEPC).}{2025}
+    \resumeAwardItem{27th in UK based on Codeforces ranking.} {Present}
+    \resumeAwardItem{Top 50 in Northwestern Europe Regional Contest (NWERC).}{2024, 2025} 
+    \resumeAwardItem{Distinction in National Polish Computer Science Olympiad.}{2023, 2024} 
+  \resumeCompactListEnd
+\vspace{2mm}
+%-----------Languages and Skills-----------
+\section{Skills \& Leadership}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \vspace{1mm}
+     Founder \& President {of the UCL Competitive Programming Society, and 3-year Team Captain. } \\
+     \vspace{1mm}
+     Programming Languages{: Advanced C++ and Java, C, Haskell, Ocaml, Python, SQL and Bash.} \\
+     \vspace{1mm}
+     Algorithmic knowledge{: Centroid Decomposition, Heavy-Light Decomposition, FFT \& Aho-Corasick.}       
+    }}
+ \end{itemize}
+
+\end{document}
